@@ -1,0 +1,46 @@
+body {
+  background: rgb(224, 224, 243);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 100px auto;
+  width: 600px;
+}
+
+.image-box {
+  position: relative;
+  overflow: hidden;
+}
+.image-box:hover .text-box {
+  left: 0%;
+}
+
+img {
+  height: 400px;
+  width: 600px;
+}
+
+.text-box {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 255, 0.9);
+  transition: 0.5s;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
